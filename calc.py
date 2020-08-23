@@ -24,5 +24,5 @@ print(a.add())
 print(a.mul())
 print(a.div())
 print(a.sub())
-
+ 
 #객체를 사용한 계산기...'-` 

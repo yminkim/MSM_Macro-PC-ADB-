@@ -12,5 +12,5 @@ for i in a:
     reserve_list.append(load_ws.cell(i,1).value)
 
 for j in a:
-    print(reserve_list[j])
+    print(reserve_list[j]) 
     j +=1

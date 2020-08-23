@@ -22,4 +22,4 @@ pyautogui.click(button='left')
 for j in a:
     j+=1 
     pyautogui.write(reserve_list[j])
-    pyautogui.press('enter')
+    pyautogui.press('enter') 

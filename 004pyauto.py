@@ -28,4 +28,4 @@ for j in a:
     pyautogui.hotkey("ctrl", "v")
     #pyautogui.write(reserve_list[j])
     time.sleep(1.2) # 어뷰징 방지용 시간차
-    pyautogui.press('enter')
+    pyautogui.press('enter') 

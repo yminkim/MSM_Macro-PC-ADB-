@@ -28,3 +28,4 @@ for j in a:
     #pyautogui.write(reserve_list[j])
     pyautogui.press('enter')
     pyautogui.press('j')
+ 

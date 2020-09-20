@@ -89,32 +89,39 @@ def runas():
 
     
 ###############################################
+# 세팅 라벨
+mobileSET_Label = Label(win)
+mobileSET_Label.config(text = "[Setting]")
+mobileSET_Label.config(font=("맑은고딕", 15))
+mobileSET_Label.place(x=20, y=25)
+mobileSET_Label.place()
+
 #type here좌표 라벨
 type_here_label = Label(win)
-type_here_label.config(text = "type here box:")
-type_here_label.place(x=20, y=55)
+type_here_label.config(text = "▶ Type Here...")
+type_here_label.place(x=25, y=55)
 type_here_label.place()
 
 #type here좌표 라벨
 type_here_xlabel = Label(win)
 type_here_xlabel.config(text = "X:")
-type_here_xlabel.place(x=110, y=55)
+type_here_xlabel.place(x=125, y=55)
 type_here_xlabel.place()
 
 #nox x 입력창
 type_here_xlct = Entry(win)
-type_here_xlct.place(x=130, y=55, width=40, height=18)
+type_here_xlct.place(x=145, y=55, width=40, height=18)
 type_here_xlct.place()
 
 #nox  y좌표 라벨
 type_here_ylabel = Label(win)
 type_here_ylabel.config(text = "Y:")
-type_here_ylabel.place(x=175, y=55)
+type_here_ylabel.place(x=190, y=55)
 type_here_ylabel.place()
 
 #nox y 입력창
 type_here_ylct = Entry(win)
-type_here_ylct.place(x=195, y=55, width=40, height=18)
+type_here_ylct.place(x=210, y=55, width=40, height=18)
 type_here_ylct.place()
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###
@@ -122,88 +129,88 @@ type_here_ylct.place()
 
 #Back space 좌표 라벨
 backSpace_label = Label(win)
-backSpace_label.config(text = "Back Space:")
-backSpace_label.place(x=20, y=75)
+backSpace_label.config(text = "▶ Backspace")
+backSpace_label.place(x=25, y=75)
 backSpace_label.place()
 
 #type here좌표 라벨
 backSpace_xlabel = Label(win)
 backSpace_xlabel.config(text = "X:")
-backSpace_xlabel.place(x=110, y=75)
+backSpace_xlabel.place(x=125, y=75)
 backSpace_xlabel.place()
 
 #nox x 입력창
 backSpace_xlct = Entry(win)
-backSpace_xlct.place(x=130, y=75, width=40, height=18)
+backSpace_xlct.place(x=145, y=75, width=40, height=18)
 backSpace_xlct.place()
 
 #nox  y좌표 라벨
 backSpace_ylabel = Label(win)
 backSpace_ylabel.config(text = "Y:")
-backSpace_ylabel.place(x=175, y=75)
+backSpace_ylabel.place(x=190, y=75)
 backSpace_ylabel.place()
 
 #nox y 입력창
 backSpace_ylct = Entry(win)
-backSpace_ylct.place(x=195, y=75, width=40, height=18)
+backSpace_ylct.place(x=210, y=75, width=40, height=18)
 backSpace_ylct.place()
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###
 #Back space 좌표 라벨
 complete_label = Label(win)
-complete_label.config(text = "완료 버튼")
-complete_label.place(x=20, y=95)
+complete_label.config(text = "▶ 완료")
+complete_label.place(x=25, y=95)
 complete_label.place()
 
 #type here좌표 라벨
 complete_xlabel = Label(win)
 complete_xlabel.config(text = "X:")
-complete_xlabel.place(x=110, y=95)
+complete_xlabel.place(x=125, y=95)
 complete_xlabel.place()
 
 #nox x 입력창
 complete_xlct = Entry(win)
-complete_xlct.place(x=130, y=95, width=40, height=18)
+complete_xlct.place(x=145, y=95, width=40, height=18)
 complete_xlct.place()
 
 #nox  y좌표 라벨
 complete_ylabel = Label(win)
 complete_ylabel.config(text = "Y:")
-complete_ylabel.place(x=175, y=95)
+complete_ylabel.place(x=190, y=95)
 complete_ylabel.place()
 
 #nox y 입력창
 complete_ylct = Entry(win)
-complete_ylct.place(x=195, y=95, width=40, height=18)
+complete_ylct.place(x=210, y=95, width=40, height=18)
 complete_ylct.place()
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###
 #Execute좌표 라벨
 execute_label = Label(win)
-execute_label.config(text = "Execute")
-execute_label.place(x=20, y=115)
+execute_label.config(text = "▶ Execute")
+execute_label.place(x=25, y=115)
 execute_label.place()
 
 #type here좌표 라벨
 execute_xlabel = Label(win)
 execute_xlabel.config(text = "X:")
-execute_xlabel.place(x=110, y=115)
+execute_xlabel.place(x=125, y=115)
 execute_xlabel.place()
 
 #nox x 입력창
 execute_xlct = Entry(win)
-execute_xlct.place(x=130, y=115, width=40, height=18)
+execute_xlct.place(x=145, y=115, width=40, height=18)
 execute_xlct.place()
 
 #nox  y좌표 라벨
 execute_ylabel = Label(win)
 execute_ylabel.config(text = "Y:")
-execute_ylabel.place(x=175, y=115)
+execute_ylabel.place(x=190, y=115)
 execute_ylabel.place()
 
 #nox y 입력창
 execute_ylct = Entry(win)
-execute_ylct.place(x=195, y=115, width=40, height=18)
+execute_ylct.place(x=210, y=115, width=40, height=18)
 execute_ylct.place()
 
 ###############################################
@@ -279,7 +286,7 @@ row_Ent.place()
 ###############################################.
 text = StringVar()
 lbl = Label(win, textvariable=text)
-lbl.place(x=0, y=30)
+lbl.place(x=0, y=0)
 lbl.place()
 
 t = threading.Thread(target=update_device)
@@ -293,6 +300,17 @@ runas_btn.config(width = 6, height=1)
 runas_btn.place(x=170, y=420)
 runas_btn.config(command = runas)
 runas_btn.place()
+
+#메모장 라벨
+mouse_location = Label(win)
+mouse_location.config(text = "메모장")
+mouse_location.place(x=24, y=286)
+mouse_location.place()
+
+
+textBox = Text(win)
+textBox.place(x=26, y=305, width=269, height=100)
+textBox.place()
 
 
 win.mainloop()

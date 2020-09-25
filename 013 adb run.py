@@ -8,7 +8,7 @@ time.sleep(1.2)
 pyautogui.write('adb shell exit') 
 time.sleep(0.07)
 pyautogui.press('enter')
-time.sleep(0.07)
+time.sleep(0.7)# 엔터를 너무 빨리치면 exit를 너무 빨리 입력해서 안 닫아짐
 pyautogui.write('exit') 
 time.sleep(0.07)
 pyautogui.press('enter')

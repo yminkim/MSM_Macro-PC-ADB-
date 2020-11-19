@@ -1,0 +1,35 @@
+from tkinter import*
+import pyautogui
+import pyperclip
+from tkinter import filedialog
+from openpyxl import load_workbook
+import os
+import time
+import threading
+
+i =0;
+j =0;
+load_wb = load_workbook("C:/Users/doping/Desktop/asssss.xlsx", data_only=True)
+load_ws = load_wb['Sheet1']
+
+reserve_list = []
+a = range(1,63)
+
+for i in a:
+    i +=1
+    reserve_list.append(load_ws.cell(i,2).value)
+
+pyautogui.moveTo(2382, 718, 0.1)
+pyautogui.click(button='left')
+
+for j in a:
+    j+=1 
+    pyperclip.copy(reserve_list[j])
+    time.sleep(0.07)
+    pyautogui.hotkey("ctrl", "shift", "n")
+    time.sleep(0.07)
+    pyautogui.hotkey("ctrl", "v")
+    time.sleep(0.07)
+    pyautogui.press('enter') 
+    time.sleep(0.07)
+
